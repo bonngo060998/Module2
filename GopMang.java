@@ -37,7 +37,6 @@ public class GopMang {
 
     /**
      * sắp xếp mảng số nguyên theo thứ tự tăng dần
-     *
      */
     public static void sortASC(float [] arr) {
         float temp = arr[0];
