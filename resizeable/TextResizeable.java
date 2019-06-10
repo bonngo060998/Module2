@@ -1,26 +1,28 @@
 package resizeable;
 
-public class TextResizeable {
+public class ResizeableTest {
     public static void main(String[] args) {
-        Shape[] shapearray = new Shape[3];
-        Square square = new Square();
-        Rectangle rectangle = new Rectangle();
-        Circle circle = new Circle();
+        Shape[] shapesarray = new Shape[3];
 
-        shapearray[0] = rectangle;
-        shapearray[1] = square;
-        shapearray[2] = circle;
+        Circle circle = new Circle ( );
+        Square square = new Square ( );
+        Rectangle rectangle = new Rectangle ( );
 
-        System.out.println ("Before: ");
-        for (Shape shape : shapearray) {
+        shapesarray[0] = circle;
+        shapesarray[1] = square;
+        shapesarray[2] = rectangle;
+
+        System.out.println ("Before resize: ");
+        for (Shape shape : shapesarray) {
             System.out.println (shape.toString ( ));
         }
-        rectangle.resize (8);
-        square.resize (6);
-        circle.resize (6);
 
-        System.out.println ("After: ");
-        for (Shape shape : shapearray) {
+        circle.resize (2);
+        rectangle.resize (2);
+        square.resize (2);
+
+        System.out.println ("After resize: ");
+        for (Shape shape : shapesarray) {
             System.out.println (shape.toString ( ));
         }
 
