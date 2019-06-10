@@ -4,9 +4,9 @@ public class ResizeableTest {
     public static void main(String[] args) {
         Shape[] shapesarray = new Shape[3];
 
-        Circle circle = new Circle ( );
-        Square square = new Square ( );
-        Rectangle rectangle = new Rectangle ( );
+        Circle circle = new Circle ();
+        Square square = new Square ();
+        Rectangle rectangle = new Rectangle ();
 
         shapesarray[0] = circle;
         shapesarray[1] = square;
@@ -14,7 +14,7 @@ public class ResizeableTest {
 
         System.out.println ("Before resize: ");
         for (Shape shape : shapesarray) {
-            System.out.println (shape.toString ( ));
+            System.out.println (shape.toString ());
         }
 
         circle.resize (2);
@@ -23,7 +23,7 @@ public class ResizeableTest {
 
         System.out.println ("After resize: ");
         for (Shape shape : shapesarray) {
-            System.out.println (shape.toString ( ));
+            System.out.println (shape.toString ());
         }
 
     }
